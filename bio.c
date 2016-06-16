@@ -63,7 +63,6 @@ static struct buf*
 bget(uint dev, uint blockno)
 {
   struct buf *b;
-
   acquire(&bcache.lock);
 
  loop:
